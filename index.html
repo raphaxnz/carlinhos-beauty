@@ -12,11 +12,48 @@
             padding: 0;
         }
         header {
-            background-color: #4CAF50;
+            background: linear-gradient(45deg, rgb(10, 119, 10), rgb(11, 231, 176));
             color: white;
             padding: 15px;
             text-align: center;
+            display: flex;
+            align-items: center;
+            background-color: #f4f4f9;
+            justify-content: space-around;
+            gap: 5rem;
         }
+
+        header div {
+            display: flex;
+            margin-top: 2rem;
+            gap: 3rem;
+            justify-content: center;
+            padding: 0.6rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(3rem);
+            -webkit-backdrop-filter: blur(10rem);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        header a {
+            list-style: none;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            transition: color 0.5s ease;
+        }
+
+        header a:hover {
+            color: rgb(121, 255, 88);
+        }
+
+        header img {
+            width: 5rem;
+            border-radius: 50%;
+        }
+
         main {
             padding: 20px;
         }
@@ -44,10 +81,15 @@
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Bem-vindo ao Projeto de Pull Request</h1>
-</header>
+    <header>
+        <img src="/assets/logo.png" alt="logo">
+        <div>
+            <a href="#sec1" class="botao_header">Sobre o Projeto</a>
+            <a href="#sec2" class="botao_header">Funcionalidades</a>
+            <a href="#sec3" class="botao_header">Footer</a>
+        </div>
+        <img src="/assets/Carlinhos.jpeg" alt="Carlinhos">
+    </header>
 
 <main>
     <section>
