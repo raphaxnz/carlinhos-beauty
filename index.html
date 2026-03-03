@@ -1,149 +1,213 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exemplo de Página HTML</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        margin: 0;
-        padding: 0;
-      }
-      header {
-        background: linear-gradient(45deg, rgb(10, 119, 10), rgb(11, 231, 176));
-        color: white;
-        padding: 15px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        background-color: #f4f4f9;
-        justify-content: space-around;
-        gap: 5rem;
-      }
 
-      header div {
-        display: flex;
-        margin-top: 2rem;
-        gap: 3rem;
-        justify-content: center;
-        padding: 0.6rem;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(3rem);
-        -webkit-backdrop-filter: blur(10rem);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        border-radius: 15px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        margin-bottom: 2rem;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exemplo de Página HTML</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
 
-      header a {
-        list-style: none;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        transition: color 0.5s ease;
-      }
+    header {
+      background: linear-gradient(45deg, rgb(10, 119, 10), rgb(11, 231, 176));
+      color: white;
+      padding: 15px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      background-color: #f4f4f9;
+      justify-content: space-around;
+      gap: 5rem;
+    }
 
-      header a:hover {
-        color: rgb(121, 255, 88);
-      }
+    header div {
+      display: flex;
+      margin-top: 2rem;
+      gap: 3rem;
+      justify-content: center;
+      padding: 0.6rem;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(3rem);
+      -webkit-backdrop-filter: blur(10rem);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+    }
 
-      header img {
-        width: 5rem;
-        border-radius: 50%;
-      }
+    header a {
+      list-style: none;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      transition: color 0.5s ease;
+    }
 
-      main {
-        padding: 20px;
-      }
-      footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 10px;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-      }
-      .btn {
-        background-color: #4caf50;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-        text-align: center;
-        display: inline-block;
-      }
-      .btn:hover {
-        background-color: #45a049;
-      }
-      .first-part {
-        display: flex;
-        justify-content: space-around;
-        width: 80%;
-        margin: auto;
-      }
-      .second-part {
-        display: flex;
-        justify-content: space-around;
-        width: 80%;
-        margin: auto;
-      }
-      .image-box1 {
-        margin-right: 30px;
-      }
-      .image {
-        width: 300px;
-        border-radius: 30px;
-      }
-      .cherie {
-        align-content: center;
-      }
-      .carlinhos {
-        align-content: center;
-      }
-    </style>
-    <link rel="icon" type="image/png" href="assets/logo.png">
-  </head>
-  <body>
-    <header>
-      <img src="assets/logo.png" alt="logo" />
-      <div>
-        <a href="#sec1" class="botao_header">Sobre o Projeto</a>
-        <a href="#sec2" class="botao_header">Funcionalidades</a>
-        <a href="#sec3" class="botao_header">Footer</a>
+    header a:hover {
+      color: rgb(121, 255, 88);
+    }
+
+    header img {
+      width: 5rem;
+      border-radius: 50%;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .btn {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+
+    .first-part {
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+      margin: auto;
+    }
+
+    .second-part {
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+      margin: auto;
+    }
+
+    .image-box1 {
+      margin-right: 30px;
+    }
+
+    .image {
+      width: 300px;
+      border-radius: 30px;
+    }
+
+    .cherie {
+      align-content: center;
+    }
+
+    .carlinhos {
+      align-content: center;
+    }
+
+    .competencias {
+      padding: 60px 20px;
+      text-align: center;
+      color: #112858;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      color: #112858;
+      width: 220px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 51, 48, 0.307);
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0, 87, 55, 0.307);
+    }
+  </style>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+
+<body>
+  <header>
+    <img src="assets/logo.png" alt="logo" />
+    <div>
+      <a href="#sec1" class="botao_header">Sobre o Projeto</a>
+      <a href="#sec2" class="botao_header">Funcionalidades</a>
+      <a href="#sec3" class="botao_header">Footer</a>
+    </div>
+    <img src="assets/Carlinhos.jpeg" alt="Carlinhos" />
+  </header>
+
+  <main>
+    <section class="first-part">
+      <div class="image-box1">
+        <img class="image" src="assets/carlinhos.jpg" alt="Foto do Carlinhos" />
       </div>
-      <img src="assets/Carlinhos.jpeg" alt="Carlinhos" />
-    </header>
+      <div class="carlinhos">
+        <h2>Sobre o Carlinhos</h2>
+        <p>
+          Carlinhos é um professor incrível, ótimo conselheiro/companheiro e
+          ama umas fofocas, amando ainda mais irritar Nicolas Isepe Paz.
+        </p>
+      </div>
+    </section>
 
-    <main>
-      <section class="first-part">
-        <div class="image-box1">
-          <img class="image" src="assets/carlinhos.jpg" alt="Foto do Carlinhos" />
-        </div>
-        <div class="carlinhos">
-          <h2>Sobre o Carlinhos</h2>
-          <p>
-            Carlinhos é um professor incrível, ótimo conselheiro/companheiro e
-            ama umas fofocas, amando ainda mais irritar Nicolas Isepe Paz.
-          </p>
-        </div>
-      </section>
+    <section class="second-part">
+      <div class="cherie">
+        <h2>Cherie</h2>
+        <p>Cherrie é uma cachorra muito fofa da espécie Salsicha!</p>
+      </div>
+      <div class="image-box2">
+        <img class="image" src="assets/cherie.jpg" alt="Cherry, a Salsicha" />
+      </div>
+    </section>
 
-      <section class="second-part">
-        <div class="cherie">
-          <h2>Cherie</h2>
-          <p>Cherrie é uma cachorra muito fofa da espécie Salsicha!</p>
-        </div>
-        <div class="image-box2">
-          <img class="image" src="assets/cherie.jpg" alt="Cherry, a Salsicha" />
-        </div>
-      </section>
-    </main>
+    <section class="competencias">
+      <h2>Competências Vocacionais</h2>
 
-    <footer>
-      <p>&copy; 2025 Projeto GitHub PR - Todos os direitos reservados.</p>
-    </footer>
-  </body>
+      <div class="cards">
+        <div class="card">
+          <h3>Desenvolvimento de software</h3>
+        </div>
+
+        <div class="card">
+          <h3>Tecnologias educacionais</h3>
+        </div>
+
+        <div class="card">
+          <h3>Ciência de dados</h3>
+        </div>
+
+        <div class="card">
+          <h3>Sistemas de gestão de aprendizagem</h3>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Projeto GitHub PR - Todos os direitos reservados.</p>
+  </footer>
+</body>
+
 </html>
