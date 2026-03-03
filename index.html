@@ -57,15 +57,29 @@
       main {
         padding: 20px;
       }
-      footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 10px;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-      }
+      footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .links {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        .links:hover {
+            color: #18621a;
+        }
+
+        .lis{
+            list-style-type: none;
+        }
+        
       .btn {
         background-color: #4caf50;
         color: white;
@@ -143,7 +157,19 @@
     </main>
 
     <footer>
-      <p>&copy; 2025 Projeto GitHub PR - Todos os direitos reservados.</p>
+      <div style="display: flex; width: 100%;">
+        <ul style="display: flex; justify-content: space-evenly; width: 100%;">
+          <li class="lis" ><a class="links" target="_blank" href="https://www.instagram.com/ana.blefari/" >Ana</a></li>
+          <li class="lis" ><a class="links" target="_blank" href="https://www.instagram.com/davinc.29/" >Davi</a></li>
+          <li class="lis" ><a class="links" target="_blank" href="https://www.instagram.com/dbent0_/" >David</a></li>
+          <li class="lis" ><a class="links" target="_blank" href="https://www.instagram.com/g.kenzoo/" >Gustavo</a></li>
+          <li class="lis" ><a class="links" target="_blank" href="https://www.instagram.com/raphaxzn/" >Raphaely</a></li>
+        </ul> 
+      </div>
+
+      <div>
+        <p>&copy; 2025 Projeto GitHub PR - Todos os direitos reservados.</p>
+      </div>
     </footer>
   </body>
 </html>
