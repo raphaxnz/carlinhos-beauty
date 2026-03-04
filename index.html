@@ -6,11 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Exemplo de Página HTML</title>
   <style>
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f9;
       margin: 0;
       padding: 0;
+    }
+
+    html, body {
+      overflow-x: hidden;
     }
 
     header {
@@ -26,18 +35,34 @@
     }
 
     header div {
+      position: fixed;
+
       display: flex;
       margin-top: 2rem;
       gap: 3rem;
       justify-content: center;
       padding: 0.6rem;
-      background: rgba(255, 255, 255, 0.1);
+      background: linear-gradient(45deg, rgb(10, 119, 10), rgb(11, 231, 176));
       backdrop-filter: blur(3rem);
       -webkit-backdrop-filter: blur(10rem);
       border-bottom: 1px solid rgba(255, 255, 255, 0.3);
       border-radius: 15px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       margin-bottom: 2rem;
+      width:  30%;
+      height: 3%;
+
+      align-items: center;
+
+      z-index: 999;
+
+      transition: transform 0.6s ease;
+
+
+    }
+
+    header div:hover{
+      transform: scale(1.06);
     }
 
     header a {
@@ -54,6 +79,11 @@
     header img {
       width: 5rem;
       border-radius: 50%;
+      transition: transform 0.6s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.07);
     }
 
     main {
@@ -105,6 +135,12 @@
     .image {
       width: 300px;
       border-radius: 30px;
+      transition: transform 0.6s ease;
+      
+    }
+
+    .image:hover{
+      transform: scale(1.06);
     }
 
     .cherie {
@@ -143,6 +179,32 @@
       transform: translateY(-10px);
       box-shadow: 0 10px 25px rgba(0, 87, 55, 0.307);
     }
+
+    footer{
+      position: static;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      bottom: 0;
+      width: 100%;
+    }
+
+        .links {
+            color: white;
+            padding: 5px 10px;
+            transition: transform 0.6s ease;
+        }
+
+        .links:hover {
+            color: rgb(11, 231, 176);
+            transform: scale(1.06);
+        }
+
+        .lis{
+            list-style-type: none;
+        }
+
+
   </style>
   <link rel="icon" type="image/png" href="assets/logo.png">
 </head>
@@ -159,7 +221,7 @@
   </header>
 
   <main>
-    <section class="first-part">
+    <section class="first-part" id="sec1">
       <div class="image-box1">
         <img class="image" src="assets/carlinhos.jpg" alt="Foto do Carlinhos" />
       </div>
@@ -182,7 +244,7 @@
       </div>
     </section>
 
-    <section class="competencias">
+    <section class="competencias" id="sec2">
       <h2>Competências Vocacionais</h2>
 
       <div class="cards">
@@ -205,8 +267,20 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Projeto GitHub PR - Todos os direitos reservados.</p>
+  <footer id="sec3">
+    <div style="display: flex; width: 100%;">
+        <ul style="display: flex; justify-content: space-evenly; width: 100%;">
+          <li class="lis" ><a class="links" target="_blank" href="https://www.instagram.com/ana.blefari/" style="text-decoration: none;" >Ana</a></li>
+          <li class="lis" ><a class="links" target="_blank" href="https://www.instagram.com/davinc.29/" style="text-decoration: none;" >Davi</a></li>
+          <li class="lis" ><a class="links" target="_blank" href="https://www.instagram.com/dbent0_/"  style="text-decoration: none;" >David</a></li>
+          <li class="lis" ><a class="links" target="_blank" href="https://www.instagram.com/g.kenzoo/" style="text-decoration: none;" >Gustavo</a></li>
+          <li class="lis" ><a class="links" target="_blank" href="https://www.instagram.com/raphaxzn/" style="text-decoration: none;" >Raphaely</a></li>
+        </ul> 
+      </div>
+
+      <div>
+        <p>&copy; 2025 Projeto GitHub PR - Todos os direitos reservados.</p>
+      </div>
   </footer>
 </body>
 
